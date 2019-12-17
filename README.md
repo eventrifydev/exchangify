@@ -33,26 +33,26 @@ const convertedAmount: number = await exchange(amount, "HRK", "EUR", 7)
 ```
 exchange(amount: number, from: string, to: string, fixedRate?: number): Promise<number>
 ```
-**amount**: amount to convert
-**from**: currency ISO 4217 standard
-**to**: currency ISO 4217 standard
-**fixedRate?**: used if you want to use fixed rate, leave empty instead
-**returns**: converted amount 
-<br>
+**amount**: amount to convert<br>
+**from**: currency ISO 4217 standard<br>
+**to**: currency ISO 4217 standard<br>
+**fixedRate?**: used if you want to use fixed rate, leave empty instead<br>
+**returns**: converted amount <br>
+<br><br>
 ```
 rates(): Promise<ExchangeRate[]>
 ```
 **returns**: ExchangeRate[]
 
 see [ExchangeRate](https://github.com/eventrifydev/exchangify/blob/master/src/ExchangeRate.ts)
-<br>
-
+<br><br>
 ```
 rate(from: string, to:string): Promise<number>
 ```
-**from**: currency ISO 4217 standard
-to: currency ISO 4217 standard
-**returns**: exchange rate for 'from' and 'to'
+**from**: currency ISO 4217 standard<br>
+**to**: currency ISO 4217 standard<br>
+**returns**: exchange rate for 'from' and 'to'<br>
+<br>
 <br>
 ### Dependencies
 None.
