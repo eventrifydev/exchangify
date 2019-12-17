@@ -33,7 +33,7 @@ const convertedAmount: number = await exchange(amount, "HRK", "EUR", 7)
 ```
 exchange(amount: number, from: string, to: string, fixedRate?: number): Promise<number>
 
-amount: amount to convert
+**amount**: amount to convert
 from: currency ISO 4217 standard
 to: currency ISO 4217 standard
 fixedRate?: used if you want to use fixed rate, leave empty instead
