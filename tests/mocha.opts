@@ -1,0 +1,4 @@
+--require ts-node/register
+--watch-extensions ts
+--timeout 120000
+tests/**/*.ts
