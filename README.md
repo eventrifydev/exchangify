@@ -44,8 +44,9 @@ rates(): Promise<ExchangeRate[]>
 
 returns: ExchangeRate[]
 
-see [ExchangeRate](https://github.com/eventrifydev/exchangify/blob/master/src/ExchangeRate.ts)
 ```
+see [ExchangeRate](https://github.com/eventrifydev/exchangify/blob/master/src/ExchangeRate.ts)
+
 ```
 rate(from: string, to:string): Promise<number>
 
@@ -65,7 +66,7 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 
 ## Authors
 
-* **Pavle Andrić, Eventrify Ltd.**
+* **Pavle Andrić, [Eventrify Ltd.](https://get2.events)**
 
 ## License
 
