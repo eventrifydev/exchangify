@@ -50,7 +50,7 @@ describe("ExchangifyTest", () => {
         expect(middleExchangeRateEURtoHRK).to.be.lessThan(1)
     })
 
-    it("rateByISO() should return middle exchange rate for HRK", async () => {
+    it("rateByISO() should return middle exchange rate for EUR", async () => {
         const exchangeRate = rateByISO("EUR", exchangeRates)
         expect(exchangeRate).to.be.a("number")
     })
