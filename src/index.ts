@@ -3,7 +3,7 @@ import { ExchangeRate, ExchangeRateHRK } from "./ExchangeRate"
 
 export async function exchange(amount: number, from: string, to: string, fixedRate?: number): Promise<number> {
     if (from === to) return amount
-    if (fixedRate) return amount * fixedRate
+    if (fixedRate) return amount / fixedRate
     const exchangeRates = await rates()
     const rateFrom = rateByISO(from, exchangeRates)
     const rateTo = rateByISO(to, exchangeRates)
