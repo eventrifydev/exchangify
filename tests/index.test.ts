@@ -30,7 +30,7 @@ describe("ExchangifyTest", () => {
     it("exchange() should return exact value for 'fixedRate'", async () => {
         const amount = 10, fixedRate = 7
         const rate = await exchange(amount, "HRK", "EUR", fixedRate)
-        expect(rate).to.equal(amount * fixedRate)
+        expect(rate).to.equal(amount / fixedRate)
     })
 
     it("rates() should return exchange rates including HRK", async () => {
