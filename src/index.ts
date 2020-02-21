@@ -40,5 +40,5 @@ export function rateByISO(currencyIso: string, exchangeRates: ExchangeRate[]): n
     if (!exchangeRate || !exchangeRate.srednji_tecaj) {
         throw new Error(`Currency '${currencyIso}' is not supported`)
     }
-    return parseInt(exchangeRate.srednji_tecaj)
+    return parseFloat(exchangeRate.srednji_tecaj)
 }
