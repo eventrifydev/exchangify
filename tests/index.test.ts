@@ -5,7 +5,7 @@ import { ExchangeRate } from "../src/ExchangeRate"
 describe("ExchangifyTest", () => {
 
     let exchangeRates: ExchangeRate[] = <any>[]
-    
+
     before(async () => {
         exchangeRates = await rates()
     })
